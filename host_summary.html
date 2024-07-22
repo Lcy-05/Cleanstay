@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숙소 등록 완료 - Stay Clean</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/sc_logo.png" alt="Stay Clean 로고" id="logo" onclick="window.location.href='index.html'">
+        <h1>숙소 등록 완료</h1>
+    </header>
+    <main class="host-container">
+        <h2>숙소가 성공적으로 등록되었습니다!</h2>
+        <p>등록된 숙소 정보:</p>
+        <p>숙소 제목: <span id="summary-title"></span></p>
+        <p>설명: <span id="summary-description"></span></p>
+        <p>위치: <span id="summary-location"></span></p>
+        <p>가격: <span id="summary-price"></span></p>
+        <p>최대 인원 수: <span id="summary-guests"></span></p>
+        <p>청소 서비스: <span id="summary-cleaning"></span></p>
+        <p>보안 서비스: <span id="summary-security"></span></p>
+        <p>패키지 서비스: <span id="summary-package"></span></p>
+        <button onclick="window.location.href='mypage.html'">마이페이지로 이동</button>
+    </main>
+    <script>
+        // URL 파라미터에서 데이터 가져오기 및 표시
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('summary-title').innerText = urlParams.get('title');
+        document.getElementById('summary-description').innerText = urlParams.get('description');
+        document.getElementById('summary-location').innerText = urlParams.get('location');
+        document.getElementById('summary-price').innerText = urlParams.get('price');
+        document.getElementById('summary-guests').innerText = urlParams.get('guests');
+        document.getElementById('summary-cleaning').innerText = urlParams.get('cleaningService') === 'true' ? '선택' : '선택 안 함';
+        document.getElementById('summary-security').innerText = urlParams.get('securityService') === 'true' ? ‘선택’ : ‘선택 안 함’;
+
+document.getElementById(‘summary-package’).innerText = urlParams.get(‘packageService’) === ‘true’ ? ‘선택’ : ‘선택 안 함’;
+
+
+</body>
+</html>

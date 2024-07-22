@@ -1,0 +1,129 @@
+body {
+    font-family: 'Jeju Myeongjo', serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+header.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFA07A;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    background-color: #FFFFFF;
+    border: none;
+    color: #FFA07A;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons button:hover {
+    background-color: #FF6347;
+    color: white;
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-section form {
+    display: flex;
+    align-items: center;
+}
+
+.search-section input, .search-section button {
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+.search-section button {
+    background-color: #FFA07A;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-section button:hover {
+    background-color: #FF6347;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+#features ul, #accommodation-types ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#features li, #accommodation-types li {
+    background-color: #CFF09E;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+#features li:hover, #accommodation-types li:hover {
+    background-color: #77AB59;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}

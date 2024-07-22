@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호스트 되기 - Stay Clean</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/sc_logo.png" alt="Stay Clean 로고" id="logo" onclick="window.location.href='index.html'">
+        <h1>호스트 되기</h1>
+    </header>
+    <main class="host-container">
+        <form id="host-signup-form">
+            <h2>호스트 정보</h2>
+            <input type="text" id="host-name" placeholder="이름" required>
+            <input type="email" id="host-email" placeholder="이메일" required>
+            <input type="tel" id="host-phone" placeholder="전화번호" required>
+            
+            <h2>숙소 정보</h2>
+            <input type="text" id="listing-title" placeholder="숙소 제목" required>
+            <textarea id="listing-description" placeholder="숙소 설명" required></textarea>
+            <input type="text" id="listing-location" placeholder="위치" required>
+            <input type="number" id="listing-price" placeholder="1박 가격 (₩)" required>
+            <input type="number" id="listing-guests" placeholder="최대 인원 수" required>
+            <label for="listing-photos">숙소 사진 업로드:</label>
+            <input type="file" id="listing-photos" multiple required>
+
+            <h2>서비스 선택</h2>
+            <p>청소 서비스 및 보안 서비스 선택에 따른 수수료 안내:</p>
+            <ul>
+                <li>성수기 호스트 수수료: 5%</li>
+                <li>비성수기 호스트 수수료: 3%</li>
+                <li>성수기 게스트 수수료: 8%</li>
+                <li>비성수기 게스트 수수료: 6%</li>
+                <li>청소 서비스: 총 금액의 3% 수수료</li>
+                <li>보안 서비스: 총 금액의 2% 수수료</li>
+                <li>모든 서비스 포함 패키지: 성수기 15%, 비성수기 12% (2% 할인 효과)</li>
+                <li>장기 숙박 할인: 7일 이상 1% 할인, 30일 이상 2% 할인</li>
+            </ul>
+            <label>
+                <input type="checkbox" id="cleaning-service"> 청소 서비스
+            </label>
+            <label>
+                <input type="checkbox" id="security-service"> 보안 서비스
+            </label>
+            <label>
+                <input type="checkbox" id="package-service"> 모든 서비스 포함 패키지
+            </label>
+
+            <button type="submit">숙소 등록</button>
+        </form>
+    </main>
+    <script src="js/host_signup.js"></script>
+</body>
+</html>

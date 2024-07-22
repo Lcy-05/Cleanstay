@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>청결과 보안의 새로운 기준, Stay Clean</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 언어 선택 메뉴 -->
+    <select id="language-selector">
+        <option value="ko">한국어</option>
+        <option value="en">English</option>
+    </select>
+
+    <!-- 헤더 -->
+    <header class="hero">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Jeju Stay Clean 로고" id="logo" onclick="window.location.href='index.html'">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="become_host.html">호스트 되기</a></li>
+                <li><a href="explore.html">탐색하기</a></li>
+                <li><a href="about.html">소개</a></li>
+                <li><a href="contact.html">문의하기</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button onclick="location.href='signup.html'">회원가입</button>
+            <button onclick="location.href='login.html'">로그인</button>
+        </div>
+    </header>
+
+    <!-- 검색 섹션 -->
+    <section class="search-section">
+        <form id="search-form">
+            <input type="text" placeholder="위치" id="location">
+            <input type="date" id="checkin">
+            <input type="date" id="checkout">
+            <input type="number" placeholder="인원 수" id="guests">
+            <button type="submit">검색</button>
+        </form>
+    </section>
+
+    <!-- 주요 특징 -->
+    <section id="features" class="container">
+        <h2>주요 특징</h2>
+        <ul>
+            <li>청결 관리</li>
+            <li>스마트 보안</li>
+            <li>'귤 뱃지' 시스템</li>
+        </ul>
+    </section>
+
+    <!-- 인기 숙소 -->
+    <section id="popular-listings" class="container">
+        <h2>인기 숙소</h2>
+        <div id="listings">
+            <!-- 숙소 카드가 여기에 표시됩니다. -->
+        </div>
+    </section>
+
+    <!-- 숙소 종류 -->
+    <section id="accommodation-types" class="container">
+        <h2>숙소 종류</h2>
+        <ul>
+            <li><a href="type.html?type=officetel">오피스텔</a></li>
+            <li><a href="type.html?type=oneroom">원룸</a></li>
+            <li><a href="type.html?type=tworoom">투룸</a></li>
+            <li><a href="type.html?type=house">별장</a></li>
+            <li><a href="type.html?type=apartment">아파트</a></li>
+        </ul>
+    </section>
+
+    <!-- 지도 뷰 -->
+    <section id="map-view">
+        <h2>지도 뷰</h2>
+        <div id="map"></div>
+    </section>
+
+    <footer>
+        <p>© 2024 Stay Clean. All rights reserved.</p>
+    </footer>
+    <script src="js/translations.js" defer></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
